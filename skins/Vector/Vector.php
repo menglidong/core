@@ -1,4 +1,13 @@
 <?php
+echo "<script type='text/javascript' src='/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>";
+echo "<script type='text/x-mathjax-config'>
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'],['\\\\(','\\\\)']]}
+  });
+</script>
+";
+?>
+<?php
 /**
  * Vector - Modern version of MonoBook with fresh look and many usability
  * improvements.
