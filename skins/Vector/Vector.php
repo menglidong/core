@@ -1,10 +1,18 @@
 <?php
 echo "<script type='text/javascript' src='/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>";
-echo "<script type='text/x-mathjax-config'>
-  MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'],['\\\\(','\\\\)']]}
-  });
-</script>
+echo " <script type='text/javascript'>MathJax.Hub.Config({
+extensions: ['tex2jax.js'],
+jax: ['input/TeX', 'output/HTML-CSS'],
+tex2jax: {
+  inlineMath: [ ['$','$'], ['\\\\(','\\\\)'] ],
+  displayMath: [ ['$$','$$'], ['\\\\[','\\\\]'] ],
+  processEscapes: true
+},
+'HTML-CSS': {
+  availableFonts: ['TeX'],
+  minScaleAdjust: 100
+}
+  });</script>
 ";
 ?>
 <?php
